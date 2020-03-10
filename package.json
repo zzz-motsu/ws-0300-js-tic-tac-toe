@@ -1,0 +1,22 @@
+{
+  "name": "js-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:css": "node-sass stylesheets/sass/index.sass build/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/version-1/js-tic-tac-toe.git"
+  },
+  "author": "j.onodera26@gmail.com (https://github.com/version-1)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/version-1/js-tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/version-1/js-tic-tac-toe#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
