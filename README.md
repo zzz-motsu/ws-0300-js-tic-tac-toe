@@ -36,6 +36,7 @@ open html
 
 参考リンク:
 [関数型プログラミングはまず考え方から理解しよう - Qiita](https://qiita.com/stkdev/items/5c021d4e5d54d56b927c)
+
 [関数型プログラミング入門 | POSTD](https://postd.cc/an-introduction-to-functional-programming/)
 
 #### 4. 成果物はGithub Pagesにて公開する。(gh-pagesブランチをつくってPUSHするだけ）
