@@ -8,8 +8,7 @@
 
 ## Prepare 準備
 
-1. Install node in your computer
-2. Install yarn in your computer
+課題に取り組む前にnode.jsのインストールが必要です。下記記事にしたがってインストールをしてください。
 
 ## Run
 
