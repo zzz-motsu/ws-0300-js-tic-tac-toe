@@ -13,6 +13,13 @@
 
 [nvm +  Node.js + npmのインストール - Qiita](https://qiita.com/sansaisoba/items/242a8ba95bf70ba179d3#mac%E3%81%AE%E5%A0%B4%E5%90%88)
 
+## 課題で身に着けること
+
+- 関数型プログラミングの基礎
+- データと振る舞いの分離
+- EventListenerの使い方
+- HTML, CSS, JSの分離
+
 
 ## Run
 
