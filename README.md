@@ -2,7 +2,7 @@
 
 このリポジトリ はHTML, CSS(SASS), JavaScriptの練習用リポジトリです。
 
-デモ: https://version-1.github.io/js-tic-tac-toe
+デモ: https://version-1.github.io/ws-0300-js-tic-tac-toe/
 
 デモをみながら同じようなアプリを実装してください。
 
