@@ -6,12 +6,13 @@
 
 デモをみながら同じようなアプリを実装してください。
 
-## Prepare 準備
+## 準備
 
 課題に取り組む前にnode.jsのインストールが必要です。下記記事にしたがってインストールをしてください。
 
 
-[nvm +  Node.js + npmのインストール - Qiita](https://qiita.com/sansaisoba/items/242a8ba95bf70ba179d3#mac%E3%81%AE%E5%A0%B4%E5%90%88)
+- [nvm +  Node.js + npmのインストール - Qiita](https://qiita.com/sansaisoba/items/242a8ba95bf70ba179d3#mac%E3%81%AE%E5%A0%B4%E5%90%88)
+- []()
 
 ## 課題で身に着けること
 
@@ -21,8 +22,7 @@
 - EventListenerの使い方
 - HTML, CSS, JSの分離
 
-
-## Run
+## 起動
 
 ```
 git clone https://github.com/version-1/js-tic-tac-toe.git
@@ -31,7 +31,7 @@ yarn install
 yarn run compile:css
 ```
 
-open html
+サーバが起動していることを確認して、HTMLを開く
 
 ## 留意事項
 
