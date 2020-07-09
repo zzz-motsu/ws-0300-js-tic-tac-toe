@@ -30,7 +30,7 @@
 
 ```
 git clone https://github.com/version-1/js-tic-tac-toe.git
-cd js-tic-tac-toe
+cd [クローンしたディレクトリ]
 yarn install
 yarn run compile:css
 ```
