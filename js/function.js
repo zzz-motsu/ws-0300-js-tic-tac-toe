@@ -24,6 +24,17 @@ const CHARACTERS = {
   cross: '×'
 }
 
+const WINNING_PATTERNS = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]
+]
+
 // 関数
 function toggleTurn({ isCircleTurn, circleElement, crossElement }) {
   if(isCircleTurn) {
@@ -35,64 +46,47 @@ function toggleTurn({ isCircleTurn, circleElement, crossElement }) {
   }
 }
 
-function checkRow({ cells }, value, index) {
-  let cursor = index
-  let baseIndex = index - (index % 3)
-  for (let i = baseIndex; i < baseIndex + 3; i++) {
-    if (cells[i] !== value) {
-      return false
-    }
-  }
-  return true
-}
-
-function checkCol({ cells }, value, index) {
-  let cursor = index
-  for (let i = 0; i < 3; i++) {
-    if (cells[cursor] !== value) {
-      return false
-    }
-    cursor = (cursor + 3) % 9
-  }
-  return true
-}
-
-function checkDiagonal({ cells }, value, index) {
-  if(![0, 2, 4, 6, 8].includes(index)) {
-    return false
-  }
-  return [0, 4, 8].every(item => cells[item] === value) || [2, 4, 6].every(item => cells[item] === value)
-}
-
-function checkWinner(context, value, index) {
-  return [checkRow, checkCol, checkDiagonal].some(cb => cb(context, value, index))
+function checkWinner(context) {
+  return WINNING_PATTERNS.some(pattern => {
+    const { cells } = context
+    const first = cells[pattern[0]]
+    const second = cells[pattern[1]]
+    const third = cells[pattern[2]]
+    return first && first === second && first === third
+  })
 }
 
 function onClickCell(e) {
   const { cells, progress, isCircleTurn, stateMessageElement } = context
   const index = Number(e.target.getAttribute('data-key')) - 1
+  // ○×を書き込めるかチェック
   if (cells[index] || !progress) {
     return
   }
 
+  // ○×を記入
   const value = isCircleTurn ? CHARACTERS.circle : CHARACTERS.cross
   e.target.innerHTML = value
   cells[index] = value
 
+  // どちらかが勝ったケース
   if (checkWinner(context, value, index)) {
     context.progress = false
     const message = isCircleTurn ? STATUSES.win.replace('%name%', CHARACTERS.circle) : STATUSES.win.replace('%name%', CHARACTERS.cross)
     stateMessageElement.innerHTML = message
-  } else {
-    toggleTurn(context)
-    context.isCircleTurn = !context.isCircleTurn
+    return
   }
 
+  // ドローのケース
   context.handCount++
   if (context.handCount === 9) {
     context.progress = false
     stateMessageElement.innerHTML = STATUSES.draw
+    return
   }
+
+  toggleTurn(context)
+  context.isCircleTurn = !context.isCircleTurn
 }
 
 function subscribe() {
