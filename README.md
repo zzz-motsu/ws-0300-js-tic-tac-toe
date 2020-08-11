@@ -23,7 +23,8 @@
 
 #### イベントについて
 
-日本語: [EventTarget.addEventListener() - Web APIs | MDN](https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener)
+- [MDN | イベントの紹介](https://developer.mozilla.org/ja/docs/Learn/JavaScript/Building_blocks/Events)
+- [EventTarget.addEventListener() - Web APIs | MDN](https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener)
 
 #### 関数型プログラミングについて
 
