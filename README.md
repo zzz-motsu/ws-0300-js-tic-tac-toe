@@ -21,6 +21,15 @@
 - [JavaScript DOM操作再入門①](https://qiita.com/tfrcm/items/8173977de75da1b0e5e9#:~:text=DOM%E3%81%AE%E6%93%8D%E4%BD%9C%E3%81%A8%E3%81%AF,%E3%81%9F%E3%82%8A%E3%81%99%E3%82%8B%E3%81%A8%E3%81%84%E3%81%86%E4%BA%8B%E3%81%A7%E3%81%99%E3%80%82)
 - [JavaScript DOM操作再入門②](https://qiita.com/tfrcm/items/1d7c3f443e235d70c73a)
 
+#### イベントについて
+
+日本語: [EventTarget.addEventListener() - Web APIs | MDN](https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener)
+
+#### 関数型プログラミングについて
+
+- [関数型プログラミングはまず考え方から理解しよう - Qiita](https://qiita.com/stkdev/items/5c021d4e5d54d56b927c)
+- [関数型プログラミング入門 | POSTD](https://postd.cc/an-introduction-to-functional-programming/)
+
 #### yarnについて
 
 - [npmとは、yarnとは](https://qiita.com/Hai-dozo/items/90b852ac29b79a7ea02b)
