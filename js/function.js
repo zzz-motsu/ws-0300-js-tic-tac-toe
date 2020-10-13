@@ -2,12 +2,12 @@ const context = {
   handCount: 0,
   isCircleTurn: true,
   progress: true,
-  cells: new Array(9),
-  cellElements: document.querySelectorAll('.js-cell'),
-  circleElement: document.querySelector('.turn-item.circle'),
-  crossElement: document.querySelector('.turn-item.cross'),
-  stateMessageElement: document.querySelector('.js-state-message'),
-  restartButtonElement: document.querySelector('.js-restart')
+  cells: new Array(9),  //(9) [empty × 9]
+  cellElements: document.querySelectorAll('.js-cell'),  //NodeList(9) [td.cell.js-cell, td.cell.js-cell, td.cell.js-cell, td.cell.js-cell, td.cell.js-cell, td.cell.js-cell, td.cell.js-cell, td.cell.js-cell, td.cell.js-cell]
+  circleElement: document.querySelector('.turn-item.circle'), //<div class="turn-item active circle">○</div>
+  crossElement: document.querySelector('.turn-item.cross'),  //<div class="turn-item cross">×</div>
+  stateMessageElement: document.querySelector('.js-state-message'),  //<div class="state-message js-state-message">starting...</div>
+  restartButtonElement: document.querySelector('.js-restart')  //<a class="button js-restart">RESTART</a>
 }
 
 const STATUSES = {
