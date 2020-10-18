@@ -68,7 +68,7 @@ function onClickCell(e) {
   cells[index] = value
 
   // どちらかが勝ったケース
-  if (checkWinner(context, value, index)) {
+  if (checkWinner(context)) {
     context.progress = false
     const message = isCircleTurn ? STATUSES.win.replace('%name%', CHARACTERS.circle) : STATUSES.win.replace('%name%', CHARACTERS.cross)
     stateMessageElement.innerHTML = message
